@@ -48,8 +48,19 @@
 
 #### 5-1 链表，在节点间穿针引线 Reverse Linked List
 
-206, 92
+206: Reverse Linked List
+92: Reverse Linked List II
 
 #### 5-2 测试你的链表程序
 
-83, 86, 328, 2, 445
+83: Remove Duplicates from Sorted List
+86: Partition List
+328: Odd Even Linked List
+2: Add Two Numbers
+445: Add Two Numbers II
+
+#### 5-3 设立链表的虚拟头节点 Remove Linked List Elements
+
+203: Remove Linked List Elements
+82: Remove Duplicates from Sorted List II
+21: Merge Two Sorted Lists
