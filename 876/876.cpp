@@ -52,38 +52,25 @@ ListNode* reverseList(ListNode *head) {
 
 class Solution {
 public:
-    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        if (!list1 || !list2) return list1 ? list1 : list2;
-        ListNode *dummyHead = new ListNode(-101);
-        dummyHead->next = list1->val <= list2->val ? list1 : list2;
-        // 其实可以令 tail = dummyHead, 再令l1, l2两个指针指向下一个待排序元素，二者地位对等，就可省去很多判断
-        ListNode *tail = dummyHead->next;
-        ListNode *other = list1->val <= list2->val ? list2 : list1;
-        while(tail->next) {
-            if (other->val < tail->next->val) {
-                ListNode *tmp = other;
-                other = tail->next;
-                tail->next = tmp;
-                tail = tail->next;
-            } else {
-                tail = tail->next;
-            }
+    ListNode* middleNode(ListNode* head) {
+        if (!head || !head->next) return head;
+        ListNode *slow = head;
+        ListNode *fast = head;
+        while (fast && fast->next) {
+            slow = slow->next;
+            fast = fast->next->next;
         }
-        tail->next = other;
-        return dummyHead->next;
+        return slow;
     }
 };
 
 int main() {
-    // int arr1[] = {1,2,4}, arr2[] = {1,3,4};
-    int arr1[] = {}, arr2[] = {};
+    // int arr1[] = {2,4,3}, arr2[] = {5,6,4};
+    int arr1[] = {1,2,3,4,5}, val = 1;
     int len1 = sizeof(arr1) / sizeof(int);
-    int len2 = sizeof(arr2) / sizeof(int);
     ListNode *l1 = createList(arr1, len1);
-    ListNode *l2 = createList(arr2, len2);
     printList(l1);
-    printList(l2);
-    ListNode *head2 = Solution().mergeTwoLists(l1, l2);
+    ListNode *head2 = Solution().middleNode(l1);
     printList(head2);
     deleteList(head2);
 

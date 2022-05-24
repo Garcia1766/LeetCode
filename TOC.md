@@ -68,6 +68,6 @@
 #### 5-4 复杂的穿针引线 Swap Nodes in Pairs
 
 24: Swap Nodes in Pairs
-25: 
-147: 
-148: 
+25: Reverse Nodes in k-Group
+147: Insertion Sort List
+148: Sort List

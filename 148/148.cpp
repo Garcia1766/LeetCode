@@ -52,38 +52,53 @@ ListNode* reverseList(ListNode *head) {
 
 class Solution {
 public:
-    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        if (!list1 || !list2) return list1 ? list1 : list2;
-        ListNode *dummyHead = new ListNode(-101);
-        dummyHead->next = list1->val <= list2->val ? list1 : list2;
-        // 其实可以令 tail = dummyHead, 再令l1, l2两个指针指向下一个待排序元素，二者地位对等，就可省去很多判断
-        ListNode *tail = dummyHead->next;
-        ListNode *other = list1->val <= list2->val ? list2 : list1;
-        while(tail->next) {
-            if (other->val < tail->next->val) {
-                ListNode *tmp = other;
-                other = tail->next;
-                tail->next = tmp;
-                tail = tail->next;
-            } else {
-                tail = tail->next;
-            }
+    ListNode* sortList(ListNode* head) {
+        if (!head || !head->next) return head;
+        ListNode *mid = getMid(head);
+        ListNode *left = sortList(head);
+        ListNode *right = sortList(mid);
+        return merge(left, right);
+    }
+
+    ListNode *getMid(ListNode *head) {
+        if (!head || !head->next) return head;
+        ListNode *slow_pre = new ListNode(-100001, head);
+        ListNode *slow = head;
+        ListNode *fast = head;
+        while (fast && fast->next) {
+            slow_pre = slow_pre->next;
+            slow = slow->next;
+            fast = fast->next->next;
         }
-        tail->next = other;
+        slow_pre->next = NULL;
+        return slow;
+    }
+    
+    ListNode *merge(ListNode *list1, ListNode *list2) {
+        ListNode *dummyHead = new ListNode(-100001);
+        ListNode *tail = dummyHead;
+        while (list1 && list2) {
+            if (list1->val < list2->val) {
+                tail->next = list1;
+                list1 = list1->next;
+            } else {
+                tail->next = list2;
+                list2 = list2->next;
+            }
+            tail = tail->next;
+        }
+        tail->next = list1 ? list1 : list2;
         return dummyHead->next;
     }
 };
 
 int main() {
-    // int arr1[] = {1,2,4}, arr2[] = {1,3,4};
-    int arr1[] = {}, arr2[] = {};
+    // int arr1[] = {2,4,3}, arr2[] = {5,6,4};
+    int arr1[] = {4,2,1,3}, val = 1;
     int len1 = sizeof(arr1) / sizeof(int);
-    int len2 = sizeof(arr2) / sizeof(int);
     ListNode *l1 = createList(arr1, len1);
-    ListNode *l2 = createList(arr2, len2);
     printList(l1);
-    printList(l2);
-    ListNode *head2 = Solution().mergeTwoLists(l1, l2);
+    ListNode *head2 = Solution().sortList(l1);
     printList(head2);
     deleteList(head2);
 
