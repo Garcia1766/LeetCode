@@ -30,15 +30,18 @@
 
 #### 4-5 灵活选择键值 4Sum II
 
-454, 49
+454: 
+49: Group Anagrams
 
 #### 4-6 灵活选择键值 Number of Boomerangs
 
-447, 149
+447: 
+149: Max Points on a Line
 
 #### 4-7 查找表和滑动窗口 Contain Duplicate II
 
-219, 217
+219: Contains Duplicate II
+217: Contains Duplicate
 
 #### 4-8 二分搜索树底层实现的顺序性 Contain Duplicate III
 
@@ -71,3 +74,20 @@
 25: Reverse Nodes in k-Group
 147: Insertion Sort List
 148: Sort List
+
+#### 5-5 不仅仅是穿针引线 Delete Node in a Linked List
+
+237: Delete Node in a Linked List
+
+#### 5-6 链表与双指针 Remove Nth Node From End of List
+
+19: Remove Nth Node From End of List
+61: Rotate List
+143: Reorder List
+234: Palindrome Linked List
+
+### 第6章 栈、队列、优先队列
+
+#### 6-1 栈的基础应用 Valid Parentheses
+
+
