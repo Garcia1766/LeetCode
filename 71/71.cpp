@@ -24,25 +24,18 @@ public:
             printf("Current char: %c\n", path[i]);
             if (stk.top() == '/') {
                 if (path[i] == '/') continue;  // "/"
-                else if (path[i] == '.' && i <= path.size() - 2 && path[i + 1] == '/') {  // "./"
+                else if (path[i] == '.' && (i <= path.size() - 2 && path[i + 1] == '/' || i == path.size() - 1)) {  // "./" or ".END"
                     i++;
                     continue;
-                } else if (path[i] == '.' && i == path.size() - 1) break;  // ".END"
-                else if (path[i] == '.' && i <= path.size() - 3 && path[i + 1] == '.' && path[i + 2] == '/') {  // "../"
+                } else if (path[i] == '.' && i <= path.size() - 2 && path[i + 1] == '.' && (
+                    i <= path.size() - 3 && path[i + 2] == '/' || i == path.size() - 2)) {  // "../" or "..END"
                     if (stk.size() > 1) {  // return to parent dir
                         stk.pop();
                         while(stk.top() != '/') stk.pop();
                     }
                     i += 2;
                     continue;
-                } else if (path[i] == '.' && i == path.size() - 2 && path[i + 1] == '.') {  // "..END"
-                    if (stk.size() > 1) {  // return to parent dir
-                        stk.pop();
-                        while(stk.top() != '/') stk.pop();
-                    }
-                    break;
-                }
-                else stk.push(path[i]);
+                } else stk.push(path[i]);
             } else {
                 if (path[i] == '/') {
                     if (i == path.size() - 1) break;
