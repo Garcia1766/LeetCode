@@ -19,9 +19,9 @@ public:
         if (root) {
             vector<int> v1 = postorderTraversal(root->left);
             res.insert(res.end(), v1.begin(), v1.end());
-            res.push_back(root->val);
             vector<int> v2 = postorderTraversal(root->right);
             res.insert(res.end(), v2.begin(), v2.end());
+            res.push_back(root->val);
         }
         return res;
     }
