@@ -90,4 +90,9 @@
 
 #### 6-1 栈的基础应用 Valid Parentheses
 
+20: Valid Parentheses
+150: Evaluate Reverse Polish Notation
+71: Simplify Path
+
+
 
