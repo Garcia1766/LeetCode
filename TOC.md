@@ -94,5 +94,9 @@
 150: Evaluate Reverse Polish Notation
 71: Simplify Path
 
+#### 6-2 栈和递归的紧密关系 Binary Tree Preorder, Inorder and Postorder Traversal
 
+144: Binary Tree Preorder Traversal
+94: Binary Tree Inorder Traversal
+145: Binary Tree Postorder Traversal
 
