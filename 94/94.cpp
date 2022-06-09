@@ -14,13 +14,13 @@ struct TreeNode {
 
 class Solution {
 public:
-    vector<int> postorderTraversal(TreeNode* root) {
+    vector<int> inorderTraversal(TreeNode* root) {
         vector<int> res;
         if (root) {
-            vector<int> v1 = postorderTraversal(root->left);
+            vector<int> v1 = inorderTraversal(root->left);
             res.insert(res.end(), v1.begin(), v1.end());
             res.push_back(root->val);
-            vector<int> v2 = postorderTraversal(root->right);
+            vector<int> v2 = inorderTraversal(root->right);
             res.insert(res.end(), v2.begin(), v2.end());
         }
         return res;

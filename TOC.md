@@ -100,3 +100,16 @@
 94: Binary Tree Inorder Traversal
 145: Binary Tree Postorder Traversal
 
+#### 6-3 运用栈模拟递归
+
+341: Flatten Nested List Iterator
+
+#### 6-4 队列的典型应用 Binary Tree Level Order Traversal
+
+102: Binary Tree Level Order Traversal, 从上往下层次遍历
+107: Binary Tree Level Order Traversal II, 从下往上层次遍历，102反过来
+103: Binary Tree Zigzag Level Order Traversal
+199: Binary Tree Right Side View
+
+#### 6-5 
+
