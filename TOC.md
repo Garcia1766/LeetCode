@@ -136,3 +136,8 @@
 101: Symmetric Tree, refer to 226 and 100
 222: Count Complete Tree Nodes
 110: Balanced Binary Tree
+
+#### 7-4
+
+112: Path Sum
+404: Sum of Left Leaves
