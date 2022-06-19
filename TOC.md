@@ -147,3 +147,9 @@
 257: Binary Tree Paths
 113: Path Sum II
 129: Sum Root to Leaf Numbers
+
+#### 7-6 稍复杂的递归逻辑 Path Sum III
+
+437: Path Sum III
+
+#### 7-7
