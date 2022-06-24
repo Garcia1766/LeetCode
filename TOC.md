@@ -122,7 +122,7 @@
 347: Top K Frequent Elements
 23: Merge k Sorted Lists
 
-### 二叉树和递归
+### 第7章 二叉树和递归
 
 #### 7-1 二叉树天然的递归结构
 
@@ -157,6 +157,19 @@
 235: Lowest Common Ancestor of a Binary Search Tree
 98: Validate Binary Search Tree
 450: Delete Node in a BST
-108: 
-230: 
-236: 
+108: Convert Sorted Array to Binary Search Tree
+230: Kth Smallest Element in a BST
+236: Lowest Common Ancestor of a Binary Tree
+
+### 第8章 递归和回溯法
+
+#### 8-1 树形问题 Letter Combinations of a Phone Number
+
+17: Letter Combinations of a Phone Number
+
+#### 8-2 什么是回溯
+
+93: Restore IP Addresses
+131: Palindrome Partitioning
+
+#### 8-3 
