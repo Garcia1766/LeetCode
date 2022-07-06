@@ -177,3 +177,16 @@
 46: Permutations
 47: Permutations II
 
+#### 8-4 组合问题 Combinations
+
+77: Combinations
+
+#### 8-5 回溯法解决组合问题的优化
+
+39: Combination Sum
+40: Combination Sum II
+216: Combination Sum III
+78: Subsets
+90: Subsets II
+401: Binary Watch
+
