@@ -172,4 +172,8 @@
 93: Restore IP Addresses
 131: Palindrome Partitioning
 
-#### 8-3 
+#### 8-3 排列问题 Permutations
+
+46: Permutations
+47: Permutations II
+
