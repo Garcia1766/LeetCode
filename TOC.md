@@ -193,3 +193,9 @@
 #### 8-6 二维平面上的回溯法 Word Search
 
 79: Word Search
+
+#### 8-7 floodfill算法，一类经典问题 Number of Islands
+
+200: Number of Islands
+130: Surrounded Regions
+417: Pacific Atlantic Water Flow
