@@ -199,3 +199,17 @@
 200: Number of Islands
 130: Surrounded Regions
 417: Pacific Atlantic Water Flow
+
+#### 8-8 回溯法是经典人工智能的基础 N Queens // TODO
+
+51: N-Queens
+52: N-Queens II
+37: Sudoku Solver
+
+### 第9章 动态规划基础
+
+#### 9-2 第一个动态规划问题 Climbing Stairs
+
+70: Climbing Stairs
+120: Triangle
+64: Minimum Path Sum

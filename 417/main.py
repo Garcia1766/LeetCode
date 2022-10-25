@@ -1,3 +1,6 @@
+from collections import deque
+from typing import List, Deque, Tuple
+
 class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
         if not heights or not heights[0]:
