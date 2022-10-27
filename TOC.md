@@ -213,3 +213,11 @@
 70: Climbing Stairs
 120: Triangle
 64: Minimum Path Sum
+
+#### 9-3 发现重叠子问题 Integer Break
+
+343: Integer Break
+279: Perfect Squares
+91: Decode Ways
+62: Unique Paths
+63: Unique Paths II
