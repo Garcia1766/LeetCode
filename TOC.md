@@ -227,7 +227,12 @@
 198: House Robber
 213: House Robber II
 337: House Robber III
+
+用状态机解决问题：
 309: Best Time to Buy and Sell Stock with Cooldown
-TODO: 121, 122, 123, 188
+121: Best Time to Buy and Sell Stock
+122: Best Time to Buy and Sell Stock II
+TODO: 123, 188, 714
+[这类问题的通解](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/solutions/75924/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)
 
 #### 
