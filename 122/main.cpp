@@ -25,3 +25,5 @@ int main() {
     printf("%d\n", res);
     return 0;
 }
+
+// Can also use peak-valley approach: Ans = \Sigma (Peak_i - Valley_i)

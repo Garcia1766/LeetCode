@@ -235,4 +235,6 @@
 TODO: 123, 188, 714
 [这类问题的通解](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/solutions/75924/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)
 
+123的衍生题: 239
+
 #### 
