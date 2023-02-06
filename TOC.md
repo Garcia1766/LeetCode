@@ -230,11 +230,23 @@
 
 用状态机解决问题：
 309: Best Time to Buy and Sell Stock with Cooldown
+- 122 with cooldown
+
 121: Best Time to Buy and Sell Stock
+- 1 transaction
+
 122: Best Time to Buy and Sell Stock II
+- Unlimited transactions
+
 123: Best Time to Buy and Sell Stock III
+- 2 transactions (121)
+
 188: Best Time to Buy and Sell Stock IV
-TODO: 714
+- k transactions (121)
+
+714: Best Time to Buy and Sell Stock with Transaction Fee
+- 122 with transaction fee
+
 [这类问题的通解](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/solutions/75924/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)
 
 123的衍生题: 239
