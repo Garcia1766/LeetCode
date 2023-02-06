@@ -232,7 +232,9 @@
 309: Best Time to Buy and Sell Stock with Cooldown
 121: Best Time to Buy and Sell Stock
 122: Best Time to Buy and Sell Stock II
-TODO: 123, 188, 714
+123: Best Time to Buy and Sell Stock III
+188: Best Time to Buy and Sell Stock IV
+TODO: 714
 [这类问题的通解](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/solutions/75924/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems/)
 
 123的衍生题: 239
