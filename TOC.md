@@ -251,4 +251,16 @@
 
 123的衍生题: 239
 
-#### 
+#### 9-5 背包问题
+
+416: Partition Equal Subset Sum
+
+322: Coin Change
+
+377: Combination Sum IV
+
+474: Ones and Zeroes
+
+139: Word Break
+
+494: Target Sum
