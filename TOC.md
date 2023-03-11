@@ -266,3 +266,9 @@
 139: Word Break
 
 494: Target Sum
+
+#### 9-8 LIS问题 Longest Increasing Subsequence
+
+300: Longest Increasing Subsequence
+
+376: Wiggle Subsequence
