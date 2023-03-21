@@ -283,14 +283,14 @@
 
 152: Maximum Product Subarray
 
-1155: 
+1155: Number of Dice Rolls With Target Sum
 
-1458: 
+1458: Max Dot Product of Two Subsequences
 
-329: 
+329: Longest Increasing Path in a Matrix
 
-1092: 
+1092: Shortest Common Supersequence
 
-1444: 
+1444: Number of Ways of Cutting a Pizza
 
 887: 
