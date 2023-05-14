@@ -292,5 +292,7 @@
 1092: Shortest Common Supersequence
 
 1444: Number of Ways of Cutting a Pizza
+- 304: Range Sum Query 2D - Immutable
+- 303: Range Sum Query - Immutable
 
-887: 
+887: Super Egg Drop
