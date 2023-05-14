@@ -296,3 +296,11 @@
 - 303: Range Sum Query - Immutable
 
 887: Super Egg Drop
+
+### 第10章 贪心算法
+
+#### 10-1 贪心基础 Assign Cookies
+
+455: Assign Cookies
+
+392: Is Subsequence
