@@ -1,8 +1,15 @@
 import java.util.ArrayList;
 
 class Solution {
+    private ArrayList<ArrayList<Integer>> dict;
+
     private ArrayList<Integer> multiplyOneDigit(StringBuilder firstNum, char secondNumDigit, int numZeros) {
         ArrayList<Integer> res = new ArrayList<>();
+        if (secondNumDigit == '0') {
+            res.add(0);
+            return res;
+        }
+
         for (int i = 0; i < numZeros; ++i) {
             res.add(0);
         }
@@ -15,6 +22,41 @@ class Solution {
         if (carry > 0) {
             res.add(carry);
         }
+        return res;
+    }
+
+    private void constructDict(StringBuilder firstNum) {
+        dict = new ArrayList<>();
+        ArrayList<Integer> zeroArrayList = new ArrayList<>();
+        zeroArrayList.add(0);
+        dict.add(zeroArrayList);
+        for (int i = 1; i <= 9; ++i) {
+            ArrayList<Integer> newArrayList = new ArrayList<>();
+            int carry = 0;
+            for (int j = 0; j < firstNum.length(); ++j) {
+                int tmp = i * (firstNum.charAt(j) - '0') + carry;
+                newArrayList.add(tmp % 10);
+                carry = tmp / 10;
+            }
+            if (carry > 0) {
+                newArrayList.add(carry);
+            }
+            dict.add(newArrayList);
+        }
+    }
+
+    private ArrayList<Integer> multiplyOneDigit2(StringBuilder firstNum, char secondNumDigit, int numZeros) {
+        ArrayList<Integer> res = new ArrayList<>();
+        if (secondNumDigit == '0') {
+            res.add(0);
+            return res;
+        }
+        
+        for (int i = 0; i < numZeros; ++i) {
+            res.add(0);
+        }
+        ArrayList<Integer> value = dict.get(secondNumDigit - '0');
+        res.addAll(value);
         return res;
     }
 
@@ -56,8 +98,15 @@ class Solution {
         secondNum.reverse();
 
         ArrayList<ArrayList<Integer>> results = new ArrayList<>();
-        for (int j = 0; j < secondNum.length(); ++j) {
-            results.add(multiplyOneDigit(firstNum, secondNum.charAt(j), j));
+        if (secondNum.length() <= 9) {
+            for (int j = 0; j < secondNum.length(); ++j) {
+                results.add(multiplyOneDigit(firstNum, secondNum.charAt(j), j));
+            }
+        } else {
+            for (int j = 0; j < secondNum.length(); ++j) {
+                constructDict(firstNum);
+                results.add(multiplyOneDigit2(firstNum, secondNum.charAt(j), j));
+            }
         }
         StringBuilder ans = sumResults(results);
 
@@ -65,7 +114,7 @@ class Solution {
     }
 }
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         String num1 = "123", num2 = "456";
         String res = new Solution().multiply(num1, num2);

@@ -308,3 +308,9 @@
 #### 10-2 贪心算法与动态规划的关系 Non-overlapping Intervals
 
 435: Non-overlapping Intervals
+
+## Notes
+
+### Add numbers
+
+66,67,415,371,989,43
