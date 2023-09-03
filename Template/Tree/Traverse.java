@@ -25,32 +25,13 @@ class Solution {
 
         Stack<TreeNode> stk = new Stack<>();
         stk.push(root);
-
         while (!stk.empty()) {
-            TreeNode curNode = stk.pop();
-            res.add(curNode.val);
-            if (curNode.right != null) stk.push(curNode.right);
-            if (curNode.left != null) stk.push(curNode.left);
+            TreeNode cur = stk.pop();
+            res.add(cur.val);
+            if (cur.right != null) stk.push(cur.right);
+            if (cur.left != null) stk.push(cur.left);
         }
 
-        return res;
-    }
-
-    public List<Integer> postorderTraverse(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        if (root == null) return res;
-
-        Stack<TreeNode> stk = new Stack<>();
-        stk.push(root);
-
-        while (!stk.empty()) {
-            TreeNode curNode = stk.pop();
-            res.add(curNode.val);
-            if (curNode.right != null) stk.push(curNode.right);
-            if (curNode.left != null) stk.push(curNode.left);
-        }
-
-        Collections.reverse(res);
         return res;
     }
 
@@ -72,6 +53,23 @@ class Solution {
             }
         }
 
+        return res;
+    }
+
+    public List<Integer> postorderTraverse(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
+
+        Stack<TreeNode> stk = new Stack<>();
+        stk.push(root);
+        while (!stk.empty()) {
+            TreeNode cur = stk.pop();
+            res.add(cur.val);
+            if (cur.left != null) stk.push(cur.left);
+            if (cur.right != null) stk.push(cur.right);
+        }
+
+        Collections.reverse(res);
         return res;
     }
 }
