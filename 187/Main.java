@@ -3,6 +3,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+// TLE at case 30
 class Solution {
     Set<Integer> posSet = new HashSet<>();
     Set<String> strSet = new HashSet<>();

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+// TLE at case 30
 class Solution {
     Map<Character, Integer> c2iMap;
     Map<Integer, Character> i2cMap;
